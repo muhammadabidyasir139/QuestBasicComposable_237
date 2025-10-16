@@ -34,3 +34,79 @@ fun TataLetakColumn(modifier: Modifier) {
     }
 }
 
+@Composable
+fun TataLetakRow(modifier: Modifier) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+        Text(text = "Komponen4")
+    }
+}
+
+@Composable
+fun TataLetakBox(modifier: Modifier) {
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .fillMaxHeight(),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(text = "Box 1")
+        Text(text = "Box 1-1")
+        Text(text = "Row 1")
+        Text(text = "Column 2")
+    }
+}
+
+@Composable
+fun TataLetakColumnRow(modifier: Modifier) {
+    Column {
+        // Baris 1
+        Row(
+            modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text(text = "Komponen1Baris1")
+            Text(text = "Komponen2Baris1")
+            Text(text = "Komponen3Baris1")
+        }
+        // Baris 2
+        Row(
+            modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text(text = "Komponen1Baris2")
+            Text(text = "Komponen2Baris2")
+            Text(text = "Komponen3Baris2")
+        }
+    }
+}
+
+@Composable
+fun TataLetakRowColumn(modifier: Modifier) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
+        // Kolom 1
+        Column {
+            Text(text = "Komponen1Kolom1")
+            Text(text = "Komponen2Kolom1")
+            Text(text = "Komponen3Kolom1")
+        }
+        // Kolom 2
+        Column {
+            Text(text = "Komponen1Kolom2")
+            Text(text = "Komponen2Kolom2")
+        }
+    }
+}
+
+
+
+
+
