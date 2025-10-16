@@ -1,5 +1,7 @@
 package com.example.questbasiccomposable_237
 
+import android.R.attr.fontFamily
+import android.graphics.fonts.FontFamily
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -18,11 +20,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.example.mylayout.R
+
 
 @Composable
 fun TataLetakColumn(modifier: Modifier) {
@@ -142,6 +141,14 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 painter = gambar,
                 contentDescription = null,
                 contentScale = ContentScale.Fit
+            )
+            Text(
+                text="Mymusic",
+                fontSize=50.Sp,
+                color=Color.Red,
+                fontWeight=FontWeight.Bold,
+                fontFamily=FontFamily.Cursive,
+                modifier=Modifier.align(Alightment.Center)
             )
 
 
