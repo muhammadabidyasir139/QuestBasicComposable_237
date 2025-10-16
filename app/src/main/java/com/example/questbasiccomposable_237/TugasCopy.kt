@@ -129,6 +129,7 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
             Text(text = "Col1_Row2_Komponen3")
         }
         }
+        Spacer(modifier = Modifier.height(10.dp))
 
 
 
