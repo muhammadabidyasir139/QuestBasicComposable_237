@@ -1,7 +1,5 @@
 package com.example.questbasiccomposable_237
 
-import android.R.attr.fontFamily
-import android.graphics.fonts.FontFamily
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -20,12 +18,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-
+import androidx.compose.ui.unit.sp
+import com.example.questbasiccomposable_237.R
 
 @Composable
 fun TataLetakColumn(modifier: Modifier) {
-    Column(modifier = modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)) {
+    Column(
+        modifier = modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)
+    ) {
         Text(text = "Komponen1")
         Text(text = "Komponen2")
         Text(text = "Komponen3")
@@ -119,14 +122,15 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 Text(text = "Col1_Row1_Komponen1")
                 Text(text = "Col1_Row1_Komponen2")
                 Text(text = "Col1_Row1_Komponen3")
-            } Row(
-                    modifier = modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly
+            }
+            Row(
+                modifier = modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
             ) {
-            Text(text = "Col1_Row2_Komponen1")
-            Text(text = "Col1_Row2_Komponen2")
-            Text(text = "Col1_Row2_Komponen3")
-        }
+                Text(text = "Col1_Row2_Komponen1")
+                Text(text = "Col1_Row2_Komponen2")
+                Text(text = "Col1_Row2_Komponen3")
+            }
         }
         Spacer(modifier = Modifier.height(10.dp))
 
@@ -136,25 +140,20 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 .height(300.dp)
                 .background(color = Color.Cyan),
             contentAlignment = Alignment.Center
-        ){
+        ) {
             Image(
                 painter = gambar,
                 contentDescription = null,
                 contentScale = ContentScale.Fit
             )
             Text(
-                text="Mymusic",
-                fontSize=50.Sp,
-                color=Color.Red,
-                fontWeight=FontWeight.Bold,
-                fontFamily=FontFamily.Cursive,
-                modifier=Modifier.align(Alightment.Center)
+                text = "Mymusic",
+                fontSize = 50.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(Alignment.Center)
             )
-
-
-
-
-
-
-
-
+        }
+    }
+}
