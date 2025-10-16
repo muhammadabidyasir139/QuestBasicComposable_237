@@ -137,7 +137,13 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 .height(300.dp)
                 .background(color = Color.Cyan),
             contentAlignment = Alignment.Center
-        )
+        ){
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit
+            )
+
 
 
 
